@@ -21,6 +21,7 @@ func NewService(runtime *runtimev1.Runtime, opts ...Option) network.Service {
 	var options Options
 	options.apply(opts...)
 	server := grpc.NewServer(
+		grpc.MaxRecvMsgSize(1024*1024*20),
 		grpc.UnaryInterceptor(interceptors.ErrorHandlingUnaryServerInterceptor()),
 		grpc.StreamInterceptor(interceptors.ErrorHandlingStreamServerInterceptor()))
 	runtimeapiv1.RegisterRuntimeServer(server, runtimev1.NewRuntimeServer(runtime))

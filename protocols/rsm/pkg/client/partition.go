@@ -7,15 +7,16 @@ package client
 import (
 	"context"
 	"fmt"
+	"sync"
+	"sync/atomic"
+	"time"
+
 	"github.com/atomix/atomix/api/errors"
 	protocol "github.com/atomix/atomix/protocols/rsm/api/v1"
 	"github.com/atomix/atomix/runtime/pkg/utils/grpc/interceptors"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/credentials/insecure"
-	"sync"
-	"sync/atomic"
-	"time"
 )
 
 func newPartition(id protocol.PartitionID, client *ProtocolClient, sessionTimeout time.Duration) *PartitionClient {
@@ -83,6 +84,9 @@ func (p *PartitionClient) connect(ctx context.Context, config *protocol.Partitio
 	address := fmt.Sprintf("%s:///%d", resolverName, p.id)
 	p.resolver = newResolver(config)
 	dialOptions := []grpc.DialOption{
+		grpc.WithDefaultCallOptions(
+			grpc.MaxCallRecvMsgSize(1024 * 1024 * 20),
+		),
 		grpc.WithTransportCredentials(insecure.NewCredentials()),
 		grpc.WithDefaultServiceConfig(fmt.Sprintf(`{"loadBalancingPolicy":"%s"}`, resolverName)),
 		grpc.WithResolvers(p.resolver),

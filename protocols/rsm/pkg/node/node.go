@@ -6,12 +6,13 @@ package node
 
 import (
 	"fmt"
+	"os"
+
 	protocol "github.com/atomix/atomix/protocols/rsm/api/v1"
 	"github.com/atomix/atomix/runtime/pkg/logging"
 	"github.com/atomix/atomix/runtime/pkg/network"
 	"github.com/atomix/atomix/runtime/pkg/utils/grpc/interceptors"
 	"google.golang.org/grpc"
-	"os"
 )
 
 var log = logging.GetLogger()
@@ -24,6 +25,7 @@ func NewNode(network network.Driver, protocol Protocol, opts ...Option) *Node {
 		Protocol: protocol,
 		network:  network,
 		server: grpc.NewServer(
+			grpc.MaxRecvMsgSize(1024*1024*20),
 			grpc.UnaryInterceptor(interceptors.ErrorHandlingUnaryServerInterceptor()),
 			grpc.StreamInterceptor(interceptors.ErrorHandlingStreamServerInterceptor())),
 	}

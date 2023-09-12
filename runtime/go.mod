@@ -1,4 +1,4 @@
-module github.com/atomix/atomix/runtime
+module github.com/vpascoalr/atomix/runtime
 
 go 1.19
 
