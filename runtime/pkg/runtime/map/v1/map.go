@@ -6,9 +6,10 @@ package v1
 
 import (
 	"context"
+
 	mapv1 "github.com/atomix/atomix/api/runtime/map/v1"
-	"github.com/atomix/atomix/runtime/pkg/logging"
-	runtime "github.com/atomix/atomix/runtime/pkg/runtime/v1"
+	"github.com/vpascoalr/atomix/runtime/pkg/logging"
+	runtime "github.com/vpascoalr/atomix/runtime/pkg/runtime/v1"
 )
 
 var log = logging.GetLogger()

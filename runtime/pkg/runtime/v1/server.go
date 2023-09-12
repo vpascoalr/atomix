@@ -6,8 +6,9 @@ package v1
 
 import (
 	"context"
+
 	runtimev1 "github.com/atomix/atomix/api/runtime/v1"
-	"github.com/atomix/atomix/runtime/pkg/logging"
+	"github.com/vpascoalr/atomix/runtime/pkg/logging"
 )
 
 func NewRuntimeServer(runtime *Runtime) runtimev1.RuntimeServer {

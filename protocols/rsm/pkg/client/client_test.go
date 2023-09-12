@@ -8,18 +8,19 @@ import (
 	"context"
 	"encoding/binary"
 	"encoding/json"
+	"io"
+	"testing"
+	"time"
+
 	runtimev1 "github.com/atomix/atomix/api/runtime/v1"
-	protocol "github.com/atomix/atomix/protocols/rsm/api/v1"
 	"github.com/atomix/atomix/runtime/pkg/network"
 	"github.com/bits-and-blooms/bloom/v3"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
+	protocol "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
-	"io"
-	"testing"
-	"time"
 )
 
 var testPrimitiveMeta = runtimev1.PrimitiveMeta{

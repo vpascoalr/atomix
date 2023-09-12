@@ -6,11 +6,12 @@ package v1
 
 import (
 	"context"
-	countermapprotocolv1 "github.com/atomix/atomix/protocols/rsm/api/countermap/v1"
-	"github.com/atomix/atomix/protocols/rsm/pkg/node"
+
 	"github.com/atomix/atomix/runtime/pkg/logging"
 	streams "github.com/atomix/atomix/runtime/pkg/stream"
 	"github.com/gogo/protobuf/proto"
+	countermapprotocolv1 "github.com/vpascoalr/atomix/protocols/rsm/api/countermap/v1"
+	"github.com/vpascoalr/atomix/protocols/rsm/pkg/node"
 	"google.golang.org/grpc"
 )
 

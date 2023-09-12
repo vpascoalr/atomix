@@ -8,7 +8,7 @@ build:
 
 .PHONY: test
 test:
-	go test github.com/atomix/atomix/protocols/rsm/pkg/... -p 1
+	go test github.com/vpascoalr/atomix/protocols/rsm/pkg/... -p 1
 
 .PHONY: api
 api:
@@ -16,4 +16,4 @@ api:
 	docker run -i \
 		-v `pwd`:/build \
 		atomix/codegen:go-latest \
-		--proto-path ./api --go-path ./api --import-path github.com/atomix/atomix/protocols/rsm/api
+		--proto-path ./api --go-path ./api --import-path github.com/vpascoalr/atomix/protocols/rsm/api

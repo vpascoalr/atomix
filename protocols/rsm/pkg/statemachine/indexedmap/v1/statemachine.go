@@ -6,11 +6,12 @@ package v1
 
 import (
 	"bytes"
-	"github.com/atomix/atomix/api/errors"
-	indexedmapprotocolv1 "github.com/atomix/atomix/protocols/rsm/api/indexedmap/v1"
-	protocol "github.com/atomix/atomix/protocols/rsm/api/v1"
-	"github.com/atomix/atomix/protocols/rsm/pkg/statemachine"
 	"sync"
+
+	"github.com/atomix/atomix/api/errors"
+	indexedmapprotocolv1 "github.com/vpascoalr/atomix/protocols/rsm/api/indexedmap/v1"
+	protocol "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
+	"github.com/vpascoalr/atomix/protocols/rsm/pkg/statemachine"
 )
 
 const (

@@ -6,8 +6,8 @@ package v1
 import (
 	context "context"
 	fmt "fmt"
-	github_com_atomix_atomix_protocols_rsm_api_v1 "github.com/atomix/atomix/protocols/rsm/api/v1"
-	v1 "github.com/atomix/atomix/protocols/rsm/api/v1"
+	github_com_atomix_atomix_protocols_rsm_api_v1 "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
+	v1 "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	grpc "google.golang.org/grpc"
@@ -1200,7 +1200,7 @@ func (m *EventsResponse) GetHeaders() *v1.ProposalResponseHeaders {
 }
 
 type MultiMapListener struct {
-	Index github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,1,opt,name=index,proto3,casttype=github.com/atomix/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
+	Index github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,1,opt,name=index,proto3,casttype=github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
 	Key   string                                              `protobuf:"bytes,2,opt,name=key,proto3" json:"key,omitempty"`
 }
 

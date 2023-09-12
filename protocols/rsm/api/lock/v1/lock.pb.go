@@ -6,8 +6,8 @@ package v1
 import (
 	context "context"
 	fmt "fmt"
-	github_com_atomix_atomix_protocols_rsm_api_v1 "github.com/atomix/atomix/protocols/rsm/api/v1"
-	v1 "github.com/atomix/atomix/protocols/rsm/api/v1"
+	github_com_atomix_atomix_protocols_rsm_api_v1 "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
+	v1 "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	_ "github.com/gogo/protobuf/types"
@@ -544,7 +544,7 @@ func (m *AcquireInput) GetTimeout() *time.Duration {
 }
 
 type AcquireOutput struct {
-	Index github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,1,opt,name=index,proto3,casttype=github.com/atomix/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
+	Index github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,1,opt,name=index,proto3,casttype=github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
 }
 
 func (m *AcquireOutput) Reset()         { *m = AcquireOutput{} }
@@ -696,7 +696,7 @@ func (m *GetInput) XXX_DiscardUnknown() {
 var xxx_messageInfo_GetInput proto.InternalMessageInfo
 
 type GetOutput struct {
-	Index github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,1,opt,name=index,proto3,casttype=github.com/atomix/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
+	Index github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,1,opt,name=index,proto3,casttype=github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
 }
 
 func (m *GetOutput) Reset()         { *m = GetOutput{} }

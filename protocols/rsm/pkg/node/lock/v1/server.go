@@ -6,10 +6,11 @@ package v1
 
 import (
 	"context"
-	lockprotocolv1 "github.com/atomix/atomix/protocols/rsm/api/lock/v1"
-	"github.com/atomix/atomix/protocols/rsm/pkg/node"
+
 	"github.com/atomix/atomix/runtime/pkg/logging"
 	"github.com/gogo/protobuf/proto"
+	lockprotocolv1 "github.com/vpascoalr/atomix/protocols/rsm/api/lock/v1"
+	"github.com/vpascoalr/atomix/protocols/rsm/pkg/node"
 	"google.golang.org/grpc"
 )
 

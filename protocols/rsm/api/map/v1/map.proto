@@ -273,7 +273,7 @@ message EventsResponse {
 
 message MapListener {
     uint64 index = 1 [
-        (gogoproto.casttype) = "github.com/atomix/atomix/protocols/rsm/api/v1.Index"
+        (gogoproto.casttype) = "github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index"
     ];
     string key = 2;
 }
@@ -286,7 +286,7 @@ message MapEntry {
 message MapValue {
     bytes value = 1;
     uint64 index = 2 [
-        (gogoproto.casttype) = "github.com/atomix/atomix/protocols/rsm/api/v1.Index"
+        (gogoproto.casttype) = "github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index"
     ];
     google.protobuf.Timestamp expire = 3 [
         (gogoproto.stdtime) = true
@@ -349,13 +349,13 @@ message PutInput {
         (gogoproto.stdduration) = true
     ];
     uint64 prev_index = 4 [
-        (gogoproto.casttype) = "github.com/atomix/atomix/protocols/rsm/api/v1.Index"
+        (gogoproto.casttype) = "github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index"
     ];
 }
 
 message PutOutput {
     uint64 index = 1 [
-        (gogoproto.casttype) = "github.com/atomix/atomix/protocols/rsm/api/v1.Index"
+        (gogoproto.casttype) = "github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index"
     ];
     IndexedValue prev_value = 2;
 }
@@ -371,7 +371,7 @@ message InsertInput {
 
 message InsertOutput {
     uint64 index = 1 [
-        (gogoproto.casttype) = "github.com/atomix/atomix/protocols/rsm/api/v1.Index"
+        (gogoproto.casttype) = "github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index"
     ];
 }
 
@@ -383,13 +383,13 @@ message UpdateInput {
         (gogoproto.stdduration) = true
     ];
     uint64 prev_index = 4 [
-        (gogoproto.casttype) = "github.com/atomix/atomix/protocols/rsm/api/v1.Index"
+        (gogoproto.casttype) = "github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index"
     ];
 }
 
 message UpdateOutput {
     uint64 index = 1 [
-        (gogoproto.casttype) = "github.com/atomix/atomix/protocols/rsm/api/v1.Index"
+        (gogoproto.casttype) = "github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index"
     ];
     IndexedValue prev_value = 2 [
         (gogoproto.nullable) = false
@@ -409,7 +409,7 @@ message GetOutput {
 message RemoveInput {
     string key = 1;
     uint64 prev_index = 2 [
-        (gogoproto.casttype) = "github.com/atomix/atomix/protocols/rsm/api/v1.Index"
+        (gogoproto.casttype) = "github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index"
     ];
 }
 
@@ -448,7 +448,7 @@ message UnlockOutput {
 
 message PrepareInput {
     uint64 sequence_num = 1 [
-        (gogoproto.casttype) = "github.com/atomix/atomix/protocols/rsm/api/v1.SequenceNum"
+        (gogoproto.casttype) = "github.com/vpascoalr/atomix/protocols/rsm/api/v1.SequenceNum"
     ];
     repeated MapInput inputs = 2 [
         (gogoproto.nullable) = false
@@ -461,7 +461,7 @@ message PrepareOutput {
 
 message CommitInput {
     uint64 sequence_num = 1 [
-        (gogoproto.casttype) = "github.com/atomix/atomix/protocols/rsm/api/v1.SequenceNum"
+        (gogoproto.casttype) = "github.com/vpascoalr/atomix/protocols/rsm/api/v1.SequenceNum"
     ];
 }
 
@@ -473,7 +473,7 @@ message CommitOutput {
 
 message AbortInput {
     uint64 sequence_num = 1 [
-        (gogoproto.casttype) = "github.com/atomix/atomix/protocols/rsm/api/v1.SequenceNum"
+        (gogoproto.casttype) = "github.com/vpascoalr/atomix/protocols/rsm/api/v1.SequenceNum"
     ];
 }
 
@@ -553,6 +553,6 @@ message Entry {
 message IndexedValue {
     bytes value = 1;
     uint64 index = 2 [
-        (gogoproto.casttype) = "github.com/atomix/atomix/protocols/rsm/api/v1.Index"
+        (gogoproto.casttype) = "github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index"
     ];
 }

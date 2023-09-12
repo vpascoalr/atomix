@@ -6,9 +6,9 @@ package v1
 
 import (
 	"github.com/atomix/atomix/api/errors"
-	indexedmapprotocolv1 "github.com/atomix/atomix/protocols/rsm/api/indexedmap/v1"
-	"github.com/atomix/atomix/protocols/rsm/pkg/statemachine"
 	"github.com/gogo/protobuf/proto"
+	indexedmapprotocolv1 "github.com/vpascoalr/atomix/protocols/rsm/api/indexedmap/v1"
+	"github.com/vpascoalr/atomix/protocols/rsm/pkg/statemachine"
 )
 
 var indexedMapCodec = statemachine.NewCodec[*indexedmapprotocolv1.IndexedMapInput, *indexedmapprotocolv1.IndexedMapOutput](

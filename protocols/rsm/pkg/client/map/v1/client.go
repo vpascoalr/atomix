@@ -6,18 +6,19 @@ package v1
 
 import (
 	"context"
+	"io"
+	"sync"
+
 	mapv1 "github.com/atomix/atomix/api/runtime/map/v1"
 	runtimev1 "github.com/atomix/atomix/api/runtime/v1"
-	mapprotocolv1 "github.com/atomix/atomix/protocols/rsm/api/map/v1"
-	protocol "github.com/atomix/atomix/protocols/rsm/api/v1"
-	"github.com/atomix/atomix/protocols/rsm/pkg/client"
 	"github.com/atomix/atomix/runtime/pkg/logging"
 	runtimemapv1 "github.com/atomix/atomix/runtime/pkg/runtime/map/v1"
 	streams "github.com/atomix/atomix/runtime/pkg/stream"
 	"github.com/atomix/atomix/runtime/pkg/utils/async"
+	mapprotocolv1 "github.com/vpascoalr/atomix/protocols/rsm/api/map/v1"
+	protocol "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
+	"github.com/vpascoalr/atomix/protocols/rsm/pkg/client"
 	"google.golang.org/grpc"
-	"io"
-	"sync"
 )
 
 var log = logging.GetLogger()

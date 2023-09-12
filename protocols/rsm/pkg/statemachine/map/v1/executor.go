@@ -6,9 +6,9 @@ package v1
 
 import (
 	"github.com/atomix/atomix/api/errors"
-	mapprotocolv1 "github.com/atomix/atomix/protocols/rsm/api/map/v1"
-	"github.com/atomix/atomix/protocols/rsm/pkg/statemachine"
 	"github.com/gogo/protobuf/proto"
+	mapprotocolv1 "github.com/vpascoalr/atomix/protocols/rsm/api/map/v1"
+	"github.com/vpascoalr/atomix/protocols/rsm/pkg/statemachine"
 )
 
 var mapCodec = statemachine.NewCodec[*mapprotocolv1.MapInput, *mapprotocolv1.MapOutput](

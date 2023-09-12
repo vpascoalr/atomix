@@ -6,9 +6,9 @@ package v1
 
 import (
 	"github.com/atomix/atomix/api/errors"
-	lockprotocolv1 "github.com/atomix/atomix/protocols/rsm/api/lock/v1"
-	protocol "github.com/atomix/atomix/protocols/rsm/api/v1"
-	"github.com/atomix/atomix/protocols/rsm/pkg/statemachine"
+	lockprotocolv1 "github.com/vpascoalr/atomix/protocols/rsm/api/lock/v1"
+	protocol "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
+	"github.com/vpascoalr/atomix/protocols/rsm/pkg/statemachine"
 )
 
 const (

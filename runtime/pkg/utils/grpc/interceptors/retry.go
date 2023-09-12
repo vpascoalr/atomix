@@ -6,15 +6,16 @@ package interceptors
 
 import (
 	"context"
-	"github.com/atomix/atomix/runtime/pkg/logging"
+	"io"
+	"sync"
+	"time"
+
 	"github.com/cenkalti/backoff"
+	"github.com/vpascoalr/atomix/runtime/pkg/logging"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"
-	"io"
-	"sync"
-	"time"
 )
 
 var log = logging.GetLogger()

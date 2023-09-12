@@ -8,10 +8,10 @@ import (
 	"fmt"
 	"os"
 
-	protocol "github.com/atomix/atomix/protocols/rsm/api/v1"
 	"github.com/atomix/atomix/runtime/pkg/logging"
 	"github.com/atomix/atomix/runtime/pkg/network"
 	"github.com/atomix/atomix/runtime/pkg/utils/grpc/interceptors"
+	protocol "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
 	"google.golang.org/grpc"
 )
 

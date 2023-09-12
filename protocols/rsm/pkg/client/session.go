@@ -8,15 +8,16 @@ import (
 	"context"
 	"encoding/binary"
 	"encoding/json"
-	"github.com/atomix/atomix/api/errors"
-	runtimev1 "github.com/atomix/atomix/api/runtime/v1"
-	protocol "github.com/atomix/atomix/protocols/rsm/api/v1"
-	"github.com/bits-and-blooms/bloom/v3"
-	"google.golang.org/grpc"
 	"os"
 	"sync"
 	"sync/atomic"
 	"time"
+
+	"github.com/atomix/atomix/api/errors"
+	runtimev1 "github.com/atomix/atomix/api/runtime/v1"
+	"github.com/bits-and-blooms/bloom/v3"
+	protocol "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
+	"google.golang.org/grpc"
 )
 
 const chanBufSize = 1000

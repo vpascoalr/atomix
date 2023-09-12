@@ -12,8 +12,8 @@ import (
 	"time"
 
 	"github.com/atomix/atomix/api/errors"
-	protocol "github.com/atomix/atomix/protocols/rsm/api/v1"
 	"github.com/atomix/atomix/runtime/pkg/utils/grpc/interceptors"
+	protocol "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/credentials/insecure"

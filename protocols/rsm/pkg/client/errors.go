@@ -6,7 +6,7 @@ package client
 
 import (
 	"github.com/atomix/atomix/api/errors"
-	protocol "github.com/atomix/atomix/protocols/rsm/api/v1"
+	protocol "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
 )
 
 // getErrorFromStatus creates a typed error from a response status

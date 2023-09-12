@@ -6,7 +6,7 @@ package statemachine
 
 import (
 	"github.com/atomix/atomix/api/errors"
-	protocol "github.com/atomix/atomix/protocols/rsm/api/v1"
+	protocol "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
 )
 
 // getFailure gets the proto status for the given error

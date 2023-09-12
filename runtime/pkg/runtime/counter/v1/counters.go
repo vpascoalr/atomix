@@ -6,11 +6,12 @@ package v1
 
 import (
 	"context"
+
 	counterv1 "github.com/atomix/atomix/api/runtime/counter/v1"
 	runtimev1 "github.com/atomix/atomix/api/runtime/v1"
-	"github.com/atomix/atomix/runtime/pkg/driver"
-	"github.com/atomix/atomix/runtime/pkg/logging"
-	runtime "github.com/atomix/atomix/runtime/pkg/runtime/v1"
+	"github.com/vpascoalr/atomix/runtime/pkg/driver"
+	"github.com/vpascoalr/atomix/runtime/pkg/logging"
+	runtime "github.com/vpascoalr/atomix/runtime/pkg/runtime/v1"
 )
 
 type CounterProvider interface {

@@ -8,14 +8,15 @@ import (
 	"container/list"
 	"encoding/binary"
 	"encoding/json"
+	"sync"
+	"time"
+
 	"github.com/atomix/atomix/api/errors"
-	protocol "github.com/atomix/atomix/protocols/rsm/api/v1"
 	"github.com/atomix/atomix/runtime/pkg/logging"
 	streams "github.com/atomix/atomix/runtime/pkg/stream"
 	"github.com/bits-and-blooms/bloom/v3"
 	"github.com/google/uuid"
-	"sync"
-	"time"
+	protocol "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
 )
 
 type CallState int

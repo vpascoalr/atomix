@@ -6,11 +6,12 @@ package v1
 
 import (
 	"context"
-	mapprotocolv1 "github.com/atomix/atomix/protocols/rsm/api/map/v1"
-	"github.com/atomix/atomix/protocols/rsm/pkg/node"
+
 	"github.com/atomix/atomix/runtime/pkg/logging"
 	streams "github.com/atomix/atomix/runtime/pkg/stream"
 	"github.com/gogo/protobuf/proto"
+	mapprotocolv1 "github.com/vpascoalr/atomix/protocols/rsm/api/map/v1"
+	"github.com/vpascoalr/atomix/protocols/rsm/pkg/node"
 	"google.golang.org/grpc"
 )
 

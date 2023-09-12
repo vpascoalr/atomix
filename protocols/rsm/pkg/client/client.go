@@ -6,10 +6,11 @@ package client
 
 import (
 	"context"
+
 	"github.com/atomix/atomix/api/errors"
-	protocol "github.com/atomix/atomix/protocols/rsm/api/v1"
 	"github.com/atomix/atomix/runtime/pkg/logging"
 	"github.com/atomix/atomix/runtime/pkg/network"
+	protocol "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
 )
 
 var log = logging.GetLogger()

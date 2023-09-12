@@ -6,11 +6,12 @@ package node
 
 import (
 	"context"
+	"time"
+
 	"github.com/atomix/atomix/api/errors"
-	protocol "github.com/atomix/atomix/protocols/rsm/api/v1"
 	streams "github.com/atomix/atomix/runtime/pkg/stream"
 	"github.com/gogo/protobuf/proto"
-	"time"
+	protocol "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
 )
 
 type Handler[I any, O any] interface {

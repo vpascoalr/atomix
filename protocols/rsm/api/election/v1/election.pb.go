@@ -6,8 +6,8 @@ package v1
 import (
 	context "context"
 	fmt "fmt"
-	github_com_atomix_atomix_protocols_rsm_api_v1 "github.com/atomix/atomix/protocols/rsm/api/v1"
-	v1 "github.com/atomix/atomix/protocols/rsm/api/v1"
+	github_com_atomix_atomix_protocols_rsm_api_v1 "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
+	v1 "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	grpc "google.golang.org/grpc"
@@ -750,7 +750,7 @@ func (m *WatchResponse) GetHeaders() *v1.QueryResponseHeaders {
 }
 
 type LeaderElectionSnapshot struct {
-	Term       github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,1,opt,name=term,proto3,casttype=github.com/atomix/atomix/protocols/rsm/api/v1.Index" json:"term,omitempty"`
+	Term       github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,1,opt,name=term,proto3,casttype=github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index" json:"term,omitempty"`
 	Leader     *LeaderElectionCandidate                            `protobuf:"bytes,2,opt,name=leader,proto3" json:"leader,omitempty"`
 	Candidates []LeaderElectionCandidate                           `protobuf:"bytes,3,rep,name=candidates,proto3" json:"candidates"`
 }
@@ -811,7 +811,7 @@ func (m *LeaderElectionSnapshot) GetCandidates() []LeaderElectionCandidate {
 
 type LeaderElectionCandidate struct {
 	Name      string                                                  `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
-	SessionID github_com_atomix_atomix_protocols_rsm_api_v1.SessionID `protobuf:"varint,2,opt,name=session_id,json=sessionId,proto3,casttype=github.com/atomix/atomix/protocols/rsm/api/v1.SessionID" json:"session_id,omitempty"`
+	SessionID github_com_atomix_atomix_protocols_rsm_api_v1.SessionID `protobuf:"varint,2,opt,name=session_id,json=sessionId,proto3,casttype=github.com/vpascoalr/atomix/protocols/rsm/api/v1.SessionID" json:"session_id,omitempty"`
 }
 
 func (m *LeaderElectionCandidate) Reset()         { *m = LeaderElectionCandidate{} }
@@ -1878,7 +1878,7 @@ func (m *WatchOutput) GetTerm() Term {
 type Term struct {
 	Leader     string                                              `protobuf:"bytes,1,opt,name=leader,proto3" json:"leader,omitempty"`
 	Candidates []string                                            `protobuf:"bytes,2,rep,name=candidates,proto3" json:"candidates,omitempty"`
-	Index      github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,3,opt,name=index,proto3,casttype=github.com/atomix/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
+	Index      github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,3,opt,name=index,proto3,casttype=github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
 }
 
 func (m *Term) Reset()         { *m = Term{} }

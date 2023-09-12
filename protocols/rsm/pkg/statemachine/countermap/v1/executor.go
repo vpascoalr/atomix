@@ -6,9 +6,9 @@ package v1
 
 import (
 	"github.com/atomix/atomix/api/errors"
-	countermapprotocolv1 "github.com/atomix/atomix/protocols/rsm/api/countermap/v1"
-	"github.com/atomix/atomix/protocols/rsm/pkg/statemachine"
 	"github.com/gogo/protobuf/proto"
+	countermapprotocolv1 "github.com/vpascoalr/atomix/protocols/rsm/api/countermap/v1"
+	"github.com/vpascoalr/atomix/protocols/rsm/pkg/statemachine"
 )
 
 var counterMapCodec = statemachine.NewCodec[*countermapprotocolv1.CounterMapInput, *countermapprotocolv1.CounterMapOutput](

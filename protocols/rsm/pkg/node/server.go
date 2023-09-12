@@ -6,10 +6,11 @@ package node
 
 import (
 	"context"
-	"github.com/atomix/atomix/api/errors"
-	protocol "github.com/atomix/atomix/protocols/rsm/api/v1"
-	"github.com/atomix/atomix/runtime/pkg/logging"
 	"time"
+
+	"github.com/atomix/atomix/api/errors"
+	"github.com/atomix/atomix/runtime/pkg/logging"
+	protocol "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
 )
 
 func newServer(protocol Protocol) *nodeServer {

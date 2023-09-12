@@ -6,16 +6,17 @@ package v1
 
 import (
 	"context"
+	"io"
+
 	indexedmapv1 "github.com/atomix/atomix/api/runtime/indexedmap/v1"
 	runtimev1 "github.com/atomix/atomix/api/runtime/v1"
-	indexedmapprotocolv1 "github.com/atomix/atomix/protocols/rsm/api/indexedmap/v1"
-	protocol "github.com/atomix/atomix/protocols/rsm/api/v1"
-	"github.com/atomix/atomix/protocols/rsm/pkg/client"
 	"github.com/atomix/atomix/runtime/pkg/logging"
 	runtimeindexedmapv1 "github.com/atomix/atomix/runtime/pkg/runtime/indexedmap/v1"
 	"github.com/atomix/atomix/runtime/pkg/utils/async"
+	indexedmapprotocolv1 "github.com/vpascoalr/atomix/protocols/rsm/api/indexedmap/v1"
+	protocol "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
+	"github.com/vpascoalr/atomix/protocols/rsm/pkg/client"
 	"google.golang.org/grpc"
-	"io"
 )
 
 var log = logging.GetLogger()

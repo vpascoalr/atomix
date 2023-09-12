@@ -6,7 +6,7 @@ package v1
 
 import (
 	runtimev1 "github.com/atomix/atomix/api/runtime/v1"
-	"github.com/atomix/atomix/runtime/pkg/driver"
+	"github.com/vpascoalr/atomix/runtime/pkg/driver"
 )
 
 type Options struct {

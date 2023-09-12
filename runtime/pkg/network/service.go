@@ -6,9 +6,10 @@ package network
 
 import (
 	"fmt"
-	"github.com/atomix/atomix/runtime/pkg/logging"
-	"google.golang.org/grpc"
 	"os"
+
+	"github.com/vpascoalr/atomix/runtime/pkg/logging"
+	"google.golang.org/grpc"
 )
 
 var log = logging.GetLogger()

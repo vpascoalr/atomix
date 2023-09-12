@@ -6,7 +6,8 @@ package client
 
 import (
 	"fmt"
-	protocol "github.com/atomix/atomix/protocols/rsm/api/v1"
+
+	protocol "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
 	"google.golang.org/grpc/attributes"
 	"google.golang.org/grpc/resolver"
 	"google.golang.org/grpc/serviceconfig"

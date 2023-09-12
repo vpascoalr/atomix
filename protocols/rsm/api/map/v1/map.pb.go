@@ -6,8 +6,8 @@ package v1
 import (
 	context "context"
 	fmt "fmt"
-	github_com_atomix_atomix_protocols_rsm_api_v1 "github.com/atomix/atomix/protocols/rsm/api/v1"
-	v1 "github.com/atomix/atomix/protocols/rsm/api/v1"
+	github_com_atomix_atomix_protocols_rsm_api_v1 "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
+	v1 "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	_ "github.com/gogo/protobuf/types"
@@ -1384,7 +1384,7 @@ func (m *EventsResponse) GetHeaders() *v1.ProposalResponseHeaders {
 }
 
 type MapListener struct {
-	Index github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,1,opt,name=index,proto3,casttype=github.com/atomix/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
+	Index github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,1,opt,name=index,proto3,casttype=github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
 	Key   string                                              `protobuf:"bytes,2,opt,name=key,proto3" json:"key,omitempty"`
 }
 
@@ -1489,7 +1489,7 @@ func (m *MapEntry) GetValue() *MapValue {
 
 type MapValue struct {
 	Value  []byte                                              `protobuf:"bytes,1,opt,name=value,proto3" json:"value,omitempty"`
-	Index  github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,2,opt,name=index,proto3,casttype=github.com/atomix/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
+	Index  github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,2,opt,name=index,proto3,casttype=github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
 	Expire *time.Time                                          `protobuf:"bytes,3,opt,name=expire,proto3,stdtime" json:"expire,omitempty"`
 }
 
@@ -2139,7 +2139,7 @@ type PutInput struct {
 	Key       string                                              `protobuf:"bytes,1,opt,name=key,proto3" json:"key,omitempty"`
 	Value     []byte                                              `protobuf:"bytes,2,opt,name=value,proto3" json:"value,omitempty"`
 	TTL       *time.Duration                                      `protobuf:"bytes,3,opt,name=ttl,proto3,stdduration" json:"ttl,omitempty"`
-	PrevIndex github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,4,opt,name=prev_index,json=prevIndex,proto3,casttype=github.com/atomix/atomix/protocols/rsm/api/v1.Index" json:"prev_index,omitempty"`
+	PrevIndex github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,4,opt,name=prev_index,json=prevIndex,proto3,casttype=github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index" json:"prev_index,omitempty"`
 }
 
 func (m *PutInput) Reset()         { *m = PutInput{} }
@@ -2204,7 +2204,7 @@ func (m *PutInput) GetPrevIndex() github_com_atomix_atomix_protocols_rsm_api_v1.
 }
 
 type PutOutput struct {
-	Index     github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,1,opt,name=index,proto3,casttype=github.com/atomix/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
+	Index     github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,1,opt,name=index,proto3,casttype=github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
 	PrevValue *IndexedValue                                       `protobuf:"bytes,2,opt,name=prev_value,json=prevValue,proto3" json:"prev_value,omitempty"`
 }
 
@@ -2316,7 +2316,7 @@ func (m *InsertInput) GetTTL() *time.Duration {
 }
 
 type InsertOutput struct {
-	Index github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,1,opt,name=index,proto3,casttype=github.com/atomix/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
+	Index github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,1,opt,name=index,proto3,casttype=github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
 }
 
 func (m *InsertOutput) Reset()         { *m = InsertOutput{} }
@@ -2363,7 +2363,7 @@ type UpdateInput struct {
 	Key       string                                              `protobuf:"bytes,1,opt,name=key,proto3" json:"key,omitempty"`
 	Value     []byte                                              `protobuf:"bytes,2,opt,name=value,proto3" json:"value,omitempty"`
 	TTL       *time.Duration                                      `protobuf:"bytes,3,opt,name=ttl,proto3,stdduration" json:"ttl,omitempty"`
-	PrevIndex github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,4,opt,name=prev_index,json=prevIndex,proto3,casttype=github.com/atomix/atomix/protocols/rsm/api/v1.Index" json:"prev_index,omitempty"`
+	PrevIndex github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,4,opt,name=prev_index,json=prevIndex,proto3,casttype=github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index" json:"prev_index,omitempty"`
 }
 
 func (m *UpdateInput) Reset()         { *m = UpdateInput{} }
@@ -2428,7 +2428,7 @@ func (m *UpdateInput) GetPrevIndex() github_com_atomix_atomix_protocols_rsm_api_
 }
 
 type UpdateOutput struct {
-	Index     github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,1,opt,name=index,proto3,casttype=github.com/atomix/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
+	Index     github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,1,opt,name=index,proto3,casttype=github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
 	PrevValue IndexedValue                                        `protobuf:"bytes,2,opt,name=prev_value,json=prevValue,proto3" json:"prev_value"`
 }
 
@@ -2569,7 +2569,7 @@ func (m *GetOutput) GetValue() IndexedValue {
 
 type RemoveInput struct {
 	Key       string                                              `protobuf:"bytes,1,opt,name=key,proto3" json:"key,omitempty"`
-	PrevIndex github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,2,opt,name=prev_index,json=prevIndex,proto3,casttype=github.com/atomix/atomix/protocols/rsm/api/v1.Index" json:"prev_index,omitempty"`
+	PrevIndex github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,2,opt,name=prev_index,json=prevIndex,proto3,casttype=github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index" json:"prev_index,omitempty"`
 }
 
 func (m *RemoveInput) Reset()         { *m = RemoveInput{} }
@@ -2904,7 +2904,7 @@ func (m *UnlockOutput) XXX_DiscardUnknown() {
 var xxx_messageInfo_UnlockOutput proto.InternalMessageInfo
 
 type PrepareInput struct {
-	SequenceNum github_com_atomix_atomix_protocols_rsm_api_v1.SequenceNum `protobuf:"varint,1,opt,name=sequence_num,json=sequenceNum,proto3,casttype=github.com/atomix/atomix/protocols/rsm/api/v1.SequenceNum" json:"sequence_num,omitempty"`
+	SequenceNum github_com_atomix_atomix_protocols_rsm_api_v1.SequenceNum `protobuf:"varint,1,opt,name=sequence_num,json=sequenceNum,proto3,casttype=github.com/vpascoalr/atomix/protocols/rsm/api/v1.SequenceNum" json:"sequence_num,omitempty"`
 	Inputs      []MapInput                                                `protobuf:"bytes,2,rep,name=inputs,proto3" json:"inputs"`
 }
 
@@ -2992,7 +2992,7 @@ func (m *PrepareOutput) XXX_DiscardUnknown() {
 var xxx_messageInfo_PrepareOutput proto.InternalMessageInfo
 
 type CommitInput struct {
-	SequenceNum github_com_atomix_atomix_protocols_rsm_api_v1.SequenceNum `protobuf:"varint,1,opt,name=sequence_num,json=sequenceNum,proto3,casttype=github.com/atomix/atomix/protocols/rsm/api/v1.SequenceNum" json:"sequence_num,omitempty"`
+	SequenceNum github_com_atomix_atomix_protocols_rsm_api_v1.SequenceNum `protobuf:"varint,1,opt,name=sequence_num,json=sequenceNum,proto3,casttype=github.com/vpascoalr/atomix/protocols/rsm/api/v1.SequenceNum" json:"sequence_num,omitempty"`
 }
 
 func (m *CommitInput) Reset()         { *m = CommitInput{} }
@@ -3080,7 +3080,7 @@ func (m *CommitOutput) GetOutputs() []MapOutput {
 }
 
 type AbortInput struct {
-	SequenceNum github_com_atomix_atomix_protocols_rsm_api_v1.SequenceNum `protobuf:"varint,1,opt,name=sequence_num,json=sequenceNum,proto3,casttype=github.com/atomix/atomix/protocols/rsm/api/v1.SequenceNum" json:"sequence_num,omitempty"`
+	SequenceNum github_com_atomix_atomix_protocols_rsm_api_v1.SequenceNum `protobuf:"varint,1,opt,name=sequence_num,json=sequenceNum,proto3,casttype=github.com/vpascoalr/atomix/protocols/rsm/api/v1.SequenceNum" json:"sequence_num,omitempty"`
 }
 
 func (m *AbortInput) Reset()         { *m = AbortInput{} }
@@ -3731,7 +3731,7 @@ func (m *Entry) GetValue() *IndexedValue {
 
 type IndexedValue struct {
 	Value []byte                                              `protobuf:"bytes,1,opt,name=value,proto3" json:"value,omitempty"`
-	Index github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,2,opt,name=index,proto3,casttype=github.com/atomix/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
+	Index github_com_atomix_atomix_protocols_rsm_api_v1.Index `protobuf:"varint,2,opt,name=index,proto3,casttype=github.com/vpascoalr/atomix/protocols/rsm/api/v1.Index" json:"index,omitempty"`
 }
 
 func (m *IndexedValue) Reset()         { *m = IndexedValue{} }

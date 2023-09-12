@@ -6,18 +6,19 @@ package v1
 
 import (
 	"context"
+	"io"
+	"sync"
+
 	multimapv1 "github.com/atomix/atomix/api/runtime/multimap/v1"
 	runtimev1 "github.com/atomix/atomix/api/runtime/v1"
-	multimapprotocolv1 "github.com/atomix/atomix/protocols/rsm/api/multimap/v1"
-	protocol "github.com/atomix/atomix/protocols/rsm/api/v1"
-	"github.com/atomix/atomix/protocols/rsm/pkg/client"
 	"github.com/atomix/atomix/runtime/pkg/logging"
 	runtimemultimapv1 "github.com/atomix/atomix/runtime/pkg/runtime/multimap/v1"
 	streams "github.com/atomix/atomix/runtime/pkg/stream"
 	"github.com/atomix/atomix/runtime/pkg/utils/async"
+	multimapprotocolv1 "github.com/vpascoalr/atomix/protocols/rsm/api/multimap/v1"
+	protocol "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
+	"github.com/vpascoalr/atomix/protocols/rsm/pkg/client"
 	"google.golang.org/grpc"
-	"io"
-	"sync"
 )
 
 var log = logging.GetLogger()
