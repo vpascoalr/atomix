@@ -5,12 +5,13 @@
 package raft
 
 import (
-	rsmv1 "github.com/atomix/atomix/protocols/rsm/api/v1"
-	"github.com/atomix/atomix/protocols/rsm/pkg/statemachine"
+	"io"
+
 	raftv1 "github.com/atomix/atomix/stores/raft/api/v1"
 	"github.com/gogo/protobuf/proto"
 	dbsm "github.com/lni/dragonboat/v3/statemachine"
-	"io"
+	rsmv1 "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
+	"github.com/vpascoalr/atomix/protocols/rsm/pkg/statemachine"
 )
 
 func newStateMachine(protocol *protocolContext, types *statemachine.PrimitiveTypeRegistry) dbsm.IStateMachine {

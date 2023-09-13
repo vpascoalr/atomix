@@ -83,8 +83,6 @@ github.com/atomix/atomix/api v1.1.0 h1:zUbuD4yPu+jBT8NkxvDKx+m8QiRqhVmFUMgRvQoC1
 github.com/atomix/atomix/api v1.1.0/go.mod h1:Fz8zXQH6n28U0NTu5xctKhkNrN5RsWgX56lrMhqXlPg=
 github.com/atomix/atomix/controller v1.0.1-0.20230301233247-275080a3c6af h1:bjpnMlUeG17jW+t1+z6U+JaXdNGUMaCPJguQEKAAsP4=
 github.com/atomix/atomix/controller v1.0.1-0.20230301233247-275080a3c6af/go.mod h1:y2eGC8VoqCZw7wB8MgSO4LZxrK9rWLvBLH2S9uuX8/I=
-github.com/atomix/atomix/protocols/rsm v1.1.1 h1:Gz3tqcp8D0nYVl4WgW/rUX3BmAjJdbGPBsTYjA8NeuQ=
-github.com/atomix/atomix/protocols/rsm v1.1.1/go.mod h1:TT5+SaXyrpS3CAHeGYftmi9DEybCsI8bZY/sFMJijTQ=
 github.com/atomix/atomix/runtime v1.1.2-0.20230331005836-16ae30b766af h1:9oWWngnY6A3zcSBKPkE5Rx5PQsn6eaCCoLOdZ5HcBzY=
 github.com/atomix/atomix/runtime v1.1.2-0.20230331005836-16ae30b766af/go.mod h1:7PtAhumBMs3TE3L/qXUSr4cNqqOWKGBFTvcHw+ZIQZ8=
 github.com/aymerick/raymond v2.0.3-0.20180322193309-b565731e1464+incompatible/go.mod h1:osfaiScAUVup+UC9Nfq76eWqDhXlp+4UYaA8uhTBO6g=
@@ -619,6 +617,8 @@ github.com/valyala/fasttemplate v1.0.1/go.mod h1:UQGH1tvbgY+Nz5t2n7tXsz52dQxojPU
 github.com/valyala/histogram v1.0.1 h1:FzA7n2Tz/wKRMejgu3PV1vw3htAklTjjuoI6z3d4KDg=
 github.com/valyala/histogram v1.0.1/go.mod h1:lQy0xA4wUz2+IUnf97SivorsJIp8FxsnRd6x25q7Mto=
 github.com/valyala/tcplisten v0.0.0-20161114210144-ceec8f93295a/go.mod h1:v3UYOV9WzVtRmSR+PDvWpU/qWl4Wa5LApYYX4ZtKbio=
+github.com/vpascoalr/atomix/protocols/rsm v0.0.0-20230912233300-3ba5593ae2b6 h1:XUlj7WCEEipfSmcQi+2P1ycRvCR+VBD2GBlhbawsRWU=
+github.com/vpascoalr/atomix/protocols/rsm v0.0.0-20230912233300-3ba5593ae2b6/go.mod h1:JM0bfICZ0ZVjB2VzIawaQZUgAc7nj+nPXSIMuQMSyd0=
 github.com/xeipuuv/gojsonpointer v0.0.0-20180127040702-4e3ac2762d5f/go.mod h1:N2zxlSyiKSe5eX1tZViRH5QA0qijqEDrYZiPEAiq3wU=
 github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415/go.mod h1:GwrjFmJcFw6At/Gs6z4yjiIwzuJ1/+UwLxMQDVQXShQ=
 github.com/xeipuuv/gojsonschema v1.2.0/go.mod h1:anYRn/JVcOK2ZgGU+IjEV4nwlhoK5sQluxsYJ78Id3Y=

@@ -7,10 +7,12 @@ package v1beta3
 import (
 	"context"
 	"fmt"
+	"time"
+
 	atomixv3beta4 "github.com/atomix/atomix/controller/pkg/apis/atomix/v3beta4"
-	rsmv1 "github.com/atomix/atomix/protocols/rsm/api/v1"
 	"github.com/atomix/atomix/runtime/pkg/logging"
 	"github.com/gogo/protobuf/jsonpb"
+	rsmv1 "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/tools/record"
@@ -21,7 +23,6 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/handler"
 	"sigs.k8s.io/controller-runtime/pkg/manager"
 	"sigs.k8s.io/controller-runtime/pkg/source"
-	"time"
 
 	raftv1beta3 "github.com/atomix/atomix/stores/raft/pkg/apis/raft/v1beta3"
 	"k8s.io/apimachinery/pkg/runtime"

@@ -7,20 +7,21 @@ package raft
 import (
 	"context"
 	"fmt"
-	"github.com/atomix/atomix/api/errors"
-	rsmv1 "github.com/atomix/atomix/protocols/rsm/api/v1"
-	"github.com/atomix/atomix/protocols/rsm/pkg/node"
-	"github.com/atomix/atomix/protocols/rsm/pkg/statemachine"
-	"github.com/atomix/atomix/runtime/pkg/logging"
-	raftv1 "github.com/atomix/atomix/stores/raft/api/v1"
-	"github.com/lni/dragonboat/v3"
-	raftconfig "github.com/lni/dragonboat/v3/config"
-	dbstatemachine "github.com/lni/dragonboat/v3/statemachine"
 	"strconv"
 	"strings"
 	"sync"
 	"sync/atomic"
 	"time"
+
+	"github.com/atomix/atomix/api/errors"
+	"github.com/atomix/atomix/runtime/pkg/logging"
+	raftv1 "github.com/atomix/atomix/stores/raft/api/v1"
+	"github.com/lni/dragonboat/v3"
+	raftconfig "github.com/lni/dragonboat/v3/config"
+	dbstatemachine "github.com/lni/dragonboat/v3/statemachine"
+	rsmv1 "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
+	"github.com/vpascoalr/atomix/protocols/rsm/pkg/node"
+	"github.com/vpascoalr/atomix/protocols/rsm/pkg/statemachine"
 )
 
 var log = logging.GetLogger()

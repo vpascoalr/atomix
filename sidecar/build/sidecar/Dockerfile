@@ -14,6 +14,8 @@ RUN go mod download
 # Build the runtime binary
 FROM builder AS build-sidecar
 
+WORKDIR /build
+
 COPY ./cmd ./cmd
 COPY ./pkg ./pkg
 
@@ -37,7 +39,7 @@ RUN atomix build plugin \
 FROM builder AS build-raft-v1-driver
 RUN atomix build plugin \
     -o ./bin/driver.so \
-    github.com/atomix/atomix/drivers/raft/v1@v0.6.1
+    github.com/vpascoalr/atomix/drivers/raft/v1@latest
 
 # Build the atomix.io/redis@v8 storage driver
 FROM builder AS build-redis-v8-driver

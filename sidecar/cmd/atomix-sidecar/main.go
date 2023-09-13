@@ -6,11 +6,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/atomix/atomix/runtime/pkg/logging"
-	"github.com/atomix/atomix/runtime/pkg/runtime"
-	runtimev1 "github.com/atomix/atomix/runtime/pkg/runtime/v1"
 	"github.com/atomix/atomix/sidecar/pkg/sidecar"
 	"github.com/spf13/cobra"
+	"github.com/vpascoalr/atomix/runtime/pkg/logging"
+	"github.com/vpascoalr/atomix/runtime/pkg/runtime"
+	runtimev1 "github.com/vpascoalr/atomix/runtime/pkg/runtime/v1"
 	"os"
 	"os/signal"
 	"strings"
@@ -65,7 +65,7 @@ func main() {
 				logging.SetLevel(logging.FatalLevel)
 			}
 
-			logging.GetLogger("github.com/atomix/atomix/runtime/pkg/utils").SetLevel(logging.ErrorLevel)
+			logging.GetLogger("github.com/vpascoalr/atomix/runtime/pkg/utils").SetLevel(logging.ErrorLevel)
 
 			// Initialize the runtime
 			rt := runtimev1.New(runtimev1.WithDriverProvider(sidecar.NewDriverProvider(pluginsDir)))

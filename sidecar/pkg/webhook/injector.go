@@ -7,7 +7,7 @@ package webhook
 import (
 	"context"
 	"fmt"
-	"github.com/atomix/atomix/runtime/pkg/logging"
+	"github.com/vpascoalr/atomix/runtime/pkg/logging"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/json"

@@ -5,11 +5,12 @@
 package raft
 
 import (
-	rsmv1 "github.com/atomix/atomix/protocols/rsm/api/v1"
-	streams "github.com/atomix/atomix/runtime/pkg/stream"
-	raftv1 "github.com/atomix/atomix/stores/raft/api/v1"
 	"sync"
 	"sync/atomic"
+
+	streams "github.com/atomix/atomix/runtime/pkg/stream"
+	raftv1 "github.com/atomix/atomix/stores/raft/api/v1"
+	rsmv1 "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
 )
 
 // newContext returns a new protocol context

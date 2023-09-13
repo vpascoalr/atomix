@@ -5,7 +5,7 @@
 package sidecar
 
 import (
-	"github.com/atomix/atomix/runtime/pkg/network"
+	"github.com/vpascoalr/atomix/runtime/pkg/network"
 )
 
 const (
