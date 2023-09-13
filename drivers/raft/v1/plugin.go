@@ -5,8 +5,8 @@
 package main
 
 import (
-	"github.com/atomix/atomix/drivers/raft/v1/driver"
-	"github.com/atomix/atomix/runtime/pkg/network"
+	"github.com/vpascoalr/atomix/drivers/raft/v1/driver"
+	"github.com/vpascoalr/atomix/runtime/pkg/network"
 )
 
 var Plugin = driver.New(network.NewDefaultDriver())

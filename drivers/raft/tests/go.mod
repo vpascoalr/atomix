@@ -1,4 +1,4 @@
-module github.com/atomix/atomix/drivers/raft/tests
+module github.com/vpascoalr/atomix/drivers/raft/tests
 
 go 1.19
 
@@ -19,7 +19,7 @@ require (
 	github.com/Masterminds/squirrel v1.5.3 // indirect
 	github.com/asaskevich/govalidator v0.0.0-20200428143746-21a406dcc535 // indirect
 	github.com/atomix/atomix/api v1.1.0 // indirect
-	github.com/atomix/atomix/runtime v1.1.0 // indirect
+	github.com/vpascoalr/atomix/runtime v1.1.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cenkalti/backoff v2.2.1+incompatible // indirect
 	github.com/cespare/xxhash/v2 v2.1.2 // indirect

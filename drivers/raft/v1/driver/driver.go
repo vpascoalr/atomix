@@ -6,9 +6,9 @@ package driver
 
 import (
 	"context"
-	rsmapiv1 "github.com/atomix/atomix/protocols/rsm/api/v1"
-	"github.com/atomix/atomix/runtime/pkg/driver"
-	"github.com/atomix/atomix/runtime/pkg/network"
+	rsmapiv1 "github.com/vpascoalr/atomix/protocols/rsm/api/v1"
+	"github.com/vpascoalr/atomix/runtime/pkg/driver"
+	"github.com/vpascoalr/atomix/runtime/pkg/network"
 )
 
 func New(network network.Driver) driver.Driver {

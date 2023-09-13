@@ -1,21 +1,21 @@
-module github.com/atomix/atomix/drivers/raft
+module github.com/vpascoalr/atomix/drivers/raft
 
 go 1.19
 
 require (
 	github.com/atomix/atomix/api v1.1.0
-	github.com/atomix/atomix/protocols/rsm v1.1.1
-	github.com/atomix/atomix/runtime v1.1.1
+	github.com/vpascoalr/atomix/protocols/rsm v0.0.0-20230912233300-3ba5593ae2b6
+	github.com/vpascoalr/atomix/runtime v0.0.0-20230912233300-3ba5593ae2b6
 )
 
 require (
+	github.com/atomix/atomix/runtime v1.1.0 // indirect
 	github.com/bits-and-blooms/bitset v1.3.1 // indirect
 	github.com/bits-and-blooms/bloom/v3 v3.3.1 // indirect
 	github.com/cenkalti/backoff v2.2.1+incompatible // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/mock v1.6.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
-	github.com/kr/text v0.1.0 // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	go.uber.org/atomic v1.7.0 // indirect
 	go.uber.org/multierr v1.6.0 // indirect

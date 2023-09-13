@@ -7,12 +7,12 @@ name: Verify Raft Driver
 on:
   push:
     branches:
-      - 'master'
+      - "master"
     paths:
-      - 'drivers/raft/**'
+      - "drivers/raft/**"
   pull_request:
     paths:
-      - 'drivers/raft/**'
+      - "drivers/raft/**"
   workflow_dispatch:
 
 concurrency:
@@ -24,7 +24,7 @@ jobs:
     uses: ./.github/workflows/test.yml
     with:
       component: drivers/raft
-      package: github.com/atomix/atomix/drivers/raft/v1/...
+      package: github.com/vpascoalr/atomix/drivers/raft/v1/...
 
   lint:
     uses: ./.github/workflows/lint.yml

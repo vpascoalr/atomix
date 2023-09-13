@@ -79,8 +79,8 @@ github.com/atomix/atomix/api v1.1.0 h1:zUbuD4yPu+jBT8NkxvDKx+m8QiRqhVmFUMgRvQoC1
 github.com/atomix/atomix/api v1.1.0/go.mod h1:Fz8zXQH6n28U0NTu5xctKhkNrN5RsWgX56lrMhqXlPg=
 github.com/atomix/atomix/controller v1.0.1-0.20230301233247-275080a3c6af h1:bjpnMlUeG17jW+t1+z6U+JaXdNGUMaCPJguQEKAAsP4=
 github.com/atomix/atomix/controller v1.0.1-0.20230301233247-275080a3c6af/go.mod h1:y2eGC8VoqCZw7wB8MgSO4LZxrK9rWLvBLH2S9uuX8/I=
-github.com/atomix/atomix/runtime v1.1.0 h1:K1fUQqfngOqkXTk+1CwbPLO9STQ6gUVe6qXLlg9ageM=
-github.com/atomix/atomix/runtime v1.1.0/go.mod h1:7PtAhumBMs3TE3L/qXUSr4cNqqOWKGBFTvcHw+ZIQZ8=
+github.com/vpascoalr/atomix/runtime v1.1.0 h1:K1fUQqfngOqkXTk+1CwbPLO9STQ6gUVe6qXLlg9ageM=
+github.com/vpascoalr/atomix/runtime v1.1.0/go.mod h1:7PtAhumBMs3TE3L/qXUSr4cNqqOWKGBFTvcHw+ZIQZ8=
 github.com/atomix/atomix/stores/raft v0.7.1-0.20230314010507-dd4da27ce84f h1:Q+q5WWCDGyrI4PomNIK+a5H0ah/GwqEOfGRRQxuYGdA=
 github.com/atomix/atomix/stores/raft v0.7.1-0.20230314010507-dd4da27ce84f/go.mod h1:sl6t0CCQ9sA1PnJzV//EApFMPPoFXwwZlrmfL8gLGhs=
 github.com/atomix/atomix/testing v0.0.0-20230407121717-bc3b3fa5f9ed h1:8OmiOq6hALuWvVbabr6cX+PAfv1yznnngny+lKr7YD0=
